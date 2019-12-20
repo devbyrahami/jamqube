@@ -1,0 +1,12 @@
+.title-wrapper {
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-bottom: -20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+}

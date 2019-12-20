@@ -1,15 +1,15 @@
 import React from "react";
 import "./homepage.styles.css";
-import Pads from "./pads.component";
+// import Pads from "./pads.component";
+import Header from "./header.component";
+import Directory from "./directory.component";
 
 const HomePage = () => (
   <div className="homepage">
-    <div className="title-wrapper">
-      <header className="title">JAMQUBE</header>
-      <p className="subtitle">Don't think, just jam.</p>
-    </div>
-    <Pads />
+    <Header />
+    <Directory />
   </div>
 );
 
 export default HomePage;
+// <Pads />;

@@ -2,6 +2,23 @@ import React from "react";
 import "./pads.styles.css";
 
 //container and the pads
+const Pads = ({ name, id, className, src, onClickSound, onClickChange }) => (
+  <div className="pads">
+    <div className="container " key={id} src={src} onClick={onClickSound}>
+      <div className="alert">
+        <div className={className} key={id} onClick={onClickChange}>
+          <div className="padName">{name}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+// <audio key={id} src={src} onClick={onClickSound}></audio>
+
+export default Pads;
+
+/*------PREVIOUS CODE-------
 const Pads = () => (
   <div className="pads">
     <div className="container">
@@ -45,4 +62,4 @@ const Pads = () => (
   </div>
 );
 
-export default Pads;
+*/

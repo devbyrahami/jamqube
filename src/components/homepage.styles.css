@@ -3,15 +3,3 @@ body {
   background: #bdbffd5b;
   margin-bottom: 150px;
 }
-
-.title-wrapper {
-  text-align: center;
-  letter-spacing: 0.8px;
-  margin-bottom: -20px;
-}
-
-.title {
-  font-weight: normal;
-  font-size: 22px;
-  padding-top: 30px;
-}

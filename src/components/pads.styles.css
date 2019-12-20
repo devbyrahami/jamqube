@@ -1,11 +1,13 @@
 .container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
+  grid-gap: 12px;
+  margin-left: 33.5%;
+  margin-top: 11%;
+  /* margin: 100px; */
+  /* margin-left: 35%; */
   /* grid-template-columns: 100px 100px 100px 100px; */
-  grid-gap: 15px;
-  margin: 100px;
-  margin-left: 35%;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .pad1,
@@ -25,18 +27,78 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 5px 2px 5px rgb(196, 191, 191);
+  cursor: pointer;
+}
+/* --------animation effect-------- */
+.pad1,
+.pad2,
+.pad3,
+.pad4 {
+  animation-name: fromLeft;
+  animation-duration: 1.5s;
+}
+.pad5,
+.pad6,
+.pad7,
+.pad8 {
+  animation-name: fromRight;
+  animation-duration: 1.5s;
+}
+.pad9,
+.pad10,
+.pad11,
+.pad12 {
+  animation-name: fromBottom;
+  animation-duration: 1.5s;
 }
 
-.padName {
-  padding-top: 40%;
-  color: white;
-  font-size: 10px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --------animation effect ENDS-------- */
 .pad1 {
-  background: #bdbffd;
+  background: #9092df;
 }
 .pad2 {
   background: #a6a8fa;
@@ -49,7 +111,7 @@
 }
 
 .pad5 {
-  background: #fec792;
+  background: #ffc793;
 }
 .pad6 {
   background: #f8b06c;
@@ -71,4 +133,60 @@
 }
 .pad12 {
   background: #acf598;
+}
+
+.padName {
+  padding-top: 40%;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.btn-active {
+  transform: scale(-1.2);
+  transition: 0.5s;
+}
+
+.pad-pad {
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.pro-tip {
+  border-radius: 20px;
+  height: 100px;
+  width: 300px;
+  background: white;
+  color: rgb(107, 107, 107) !important;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  z-index: 3;
+  left: 40%;
+  right: auto;
+  top: 35%;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.tipColor {
+  color: black;
+  font-family: sans-serif;
+}
+
+.icon-close {
+  padding-right: 5px;
+  /* color: rgb(95, 91, 91); */
+  color: black;
+}
+
+.icon-close:hover {
+  color: red;
+  transform: rotate(360deg);
+  transition: 0.3s;
 }
